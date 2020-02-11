@@ -4,17 +4,34 @@
 
 <head>
     
-    <link rel="icon" href="/img/weather.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+    body{
+        background-image: url("/image/pb.jpg");
+    }
+    </style>   
+    
+    {{!-- <link rel="icon" href="/img/weather.png"> --}}
+    <link rel="stylesheet" href="/public/css/style.css">
 </head>
 
 <body>
-    <div class="main-content">
-        {{>header}}
-        <img class="portrait" src="/img/BNK.png">
-    </div>
-    
-    {{>footer}}
+      {{>header}}
+    {{!-- <div class="main-content">
+        <img class="circle" src="/image/img.jpg">
+    </div> --}}
+  
+
+  <div class = "image-about">
+   
+<div>       <img src="/image/bala.png" width="400px"
+  height="400px">
+
+  <div class="about">
+<p>Hi! I am Bala, a web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2018. I enjoy creating beautifully designed, intuitive and functional websites</p>
+  </div>
+  </div>
+  </div>
 </body>
+
 
 </html>

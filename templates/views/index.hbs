@@ -3,29 +3,31 @@
 <html>
 
 <head>
-    <title>Weather</title>
-    <link rel="icon" href="/img/weather.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    
+    {{!-- <link rel="icon" href="/img/weather.png"> --}}
+<style>
+    body{
+        background-image: url("/image/pb.jpg");
+    }
+    </style>   
+
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+
 </head>
 
+
 <body>
-    <div class="main-content">
-        {{>header}}
+      {{>header}}
 
-        <p>Use this site to get your weather!</p>
+      <div class = "image-container">
+          <img src="/image/bala.jpg" width="250px"
+  height="250px">
+      <p class="name">I Am Bala Nagendra Kumar N</p>
+      <p class="sub">web developer</p>
+      <p class="sub">my details are in next page</p>
+      </div>
 
-        <form>
-            <input placeholder="Location">
-            <button>Search</button>
-        </form>
-
-        <p id="message-1"></p>
-        <p id="message-2"></p>
-    </div>
-
-    {{>footer}}
-
-    <script src="/js/app.js"></script>
 </body>
+
 
 </html>
