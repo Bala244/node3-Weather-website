@@ -3,16 +3,30 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>About</title>
     <link rel="icon" href="/img/weather.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<head>
+    <style>
+    body{
+    
+   background-image: url(/img/bg.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+    }   
+    </style>
 </head>
 
 <body>
     <div class="main-content">
         {{>header}}
-        <p>This site was created by Bala. It uses data from mapbox.com and darksky.net!</p>
-        <img class="portrait" src="/img/bnk.png">
+        <img class="portrait" src="/img/images.jpeg">
+        <p class="name">This site was created by Bala. It uses data from mapbox.com and darksky.net!</p>
+        
     </div>
     
     {{>footer}}

@@ -3,15 +3,29 @@
 <html>
 
 <head>
+    <meta charset="utf-8"> 
     <title>Help</title>
     <link rel="icon" href="/img/weather.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<head>
+    <style>
+    body{
+    
+   background-image: url(/img/bg.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+    }   
+    </style>
 </head>
 
 <body>
     <div class="main-content">
         {{>header}}
-        <p>{{helpText}}</p>
+        <p class="namee">{{helpText}}</p>
+        <P class="name">Using is website to know weather details in your Location</P>
     </div>
     
     {{>footer}}

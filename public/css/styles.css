@@ -1,30 +1,31 @@
 body {
-    color: #333333;
+    position: relative;
+    color: #0e0d0d;
+    font-weight: 500;
     font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
+    max-width: 720px;
+    margin: auto;
     padding: 0 16px;
-
+    text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
+    margin-top: 5%;
 }
 
 .main-content {
     flex-grow: 1;
+    font-size: x-large;
 }
 
 footer {
     color: #888888;
     border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 0;
+    margin-bottom: 60px;
+    padding: 3%;
 }
 
-header {
-    margin-top: 16px;
-    margin-bottom: 48px;
-}
+
 
 h1 {
     font-size: 64px;
@@ -32,13 +33,15 @@ h1 {
 }
 
 header a {
-    color: #888888;
+    color: #302c2c;
     margin-right: 16px;
     text-decoration: none;
 }
 
 .portrait {
     width: 250px;
+    border-radius: 80%;
+    padding: 5%;
 }
 
 input {
@@ -52,4 +55,17 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+    border-radius: 35%;
+    border: 5px;
+}
+@media screen and (max-width:720){
+    .main-content{
+        position: fixed;
+    }
+}
+.name{
+    color: #f8d7d7;
+}
+.namee{
+    color: #080808;
 }
